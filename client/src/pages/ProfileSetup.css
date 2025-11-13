@@ -1,0 +1,106 @@
+.profile-setup-container {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc4 100%);
+}
+
+.profile-setup-card {
+  background: white;
+  border-radius: 16px;
+  padding: 48px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+}
+
+.profile-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.profile-subtitle {
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.disease-input-wrapper {
+  display: flex;
+  gap: 8px;
+}
+
+.disease-input-wrapper input {
+  flex: 1;
+}
+
+.btn-add {
+  background-color: var(--secondary-green);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-add:hover {
+  background-color: var(--primary-green);
+}
+
+.disease-tags {
+  margin-top: 12px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.disease-tag {
+  background-color: var(--light-green);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.remove-tag {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 0;
+  line-height: 1;
+}
+
+.remove-tag:hover {
+  color: var(--primary-green);
+}
+
+.profile-btn {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px;
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .profile-setup-card {
+    padding: 32px 24px;
+  }
+
+  .profile-title {
+    font-size: 28px;
+  }
+}

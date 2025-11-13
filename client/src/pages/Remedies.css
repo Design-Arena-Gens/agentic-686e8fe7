@@ -1,0 +1,238 @@
+.remedies {
+  min-height: calc(100vh - 64px);
+  background-color: var(--beige);
+  padding: 40px 20px;
+}
+
+.remedies-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.remedies-header {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.remedies-header h1 {
+  font-size: 40px;
+  color: var(--primary-green);
+  margin-bottom: 12px;
+}
+
+.remedies-header p {
+  font-size: 18px;
+  color: var(--gray);
+}
+
+/* Filter Section */
+.filter-section {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px var(--shadow);
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-section label {
+  font-weight: 600;
+  color: var(--brown);
+}
+
+.disease-select {
+  flex: 1;
+  min-width: 250px;
+  padding: 12px;
+  border: 2px solid var(--light-gray);
+  border-radius: 8px;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+  cursor: pointer;
+}
+
+.disease-select:focus {
+  outline: none;
+  border-color: var(--secondary-green);
+}
+
+/* Personalized Section */
+.personalized-section {
+  margin-bottom: 48px;
+}
+
+.personalized-section h2 {
+  font-size: 28px;
+  color: var(--primary-green);
+  margin-bottom: 8px;
+}
+
+.section-description {
+  font-size: 16px;
+  color: var(--gray);
+  margin-bottom: 24px;
+}
+
+/* All Remedies Section */
+.all-remedies-section h2 {
+  font-size: 28px;
+  color: var(--primary-green);
+  margin-bottom: 24px;
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  color: var(--gray);
+  padding: 40px;
+  background: white;
+  border-radius: 12px;
+}
+
+/* Remedies Grid */
+.remedies-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 24px;
+}
+
+.remedy-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 8px var(--shadow);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.remedy-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.remedy-card.personalized {
+  border: 2px solid var(--light-green);
+}
+
+.remedy-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(135deg, var(--primary-green), var(--secondary-green));
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.remedy-icon {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+.remedy-card h3 {
+  font-size: 24px;
+  color: var(--primary-green);
+  margin-bottom: 8px;
+}
+
+.remedy-category {
+  color: var(--brown);
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.remedy-description {
+  color: var(--gray);
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.remedy-benefits {
+  margin-bottom: 16px;
+}
+
+.remedy-benefits strong {
+  color: var(--primary-green);
+  display: block;
+  margin-bottom: 8px;
+}
+
+.remedy-benefits ul {
+  list-style: none;
+  padding: 0;
+}
+
+.remedy-benefits li {
+  padding: 4px 0;
+  color: var(--gray);
+}
+
+.remedy-benefits li::before {
+  content: "✓ ";
+  color: var(--light-green);
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.remedy-properties {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.property-tag {
+  background-color: var(--beige);
+  color: var(--brown);
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.remedy-nutrients {
+  background-color: var(--beige);
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.remedy-nutrients strong {
+  color: var(--primary-green);
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.nutrient-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 8px;
+  font-size: 13px;
+  color: var(--gray);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .remedies-header h1 {
+    font-size: 32px;
+  }
+
+  .remedies-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .filter-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .disease-select {
+    width: 100%;
+  }
+}
